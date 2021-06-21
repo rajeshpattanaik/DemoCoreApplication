@@ -31,7 +31,6 @@
     ".NETCoreApp,Version=v3.1": {
       "NewCoreApplication/1.0.0": {
         "dependencies": {
-          "DataAnnotationsExtensions": "5.0.1.27",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -320,17 +319,6 @@
         },
         "compile": {
           "NewCoreApplication.dll": {}
-        }
-      },
-      "DataAnnotationsExtensions/5.0.1.27": {
-        "runtime": {
-          "lib/NETFramework40/DataAnnotationsExtensions.dll": {
-            "assemblyVersion": "5.0.1.27",
-            "fileVersion": "5.0.1.27"
-          }
-        },
-        "compile": {
-          "lib/NETFramework40/DataAnnotationsExtensions.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -2032,13 +2020,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "DataAnnotationsExtensions/5.0.1.27": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-lw4n4XzY62raAOrrlPdkh4h3PXenReARIazAPzs8AvlkKDAK9pe7kcUL3dh3T095/Q9+LezoXCfjEgDPslmGyg==",
-      "path": "dataannotationsextensions/5.0.1.27",
-      "hashPath": "dataannotationsextensions.5.0.1.27.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",
