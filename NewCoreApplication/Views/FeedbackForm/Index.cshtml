@@ -1,0 +1,128 @@
+﻿@{
+ViewData["Title"] = "Feedback Details";
+}
+
+@using (Html.BeginForm("FormSubmit", "Home", FormMethod.Post, new { @class = "g-3 needs-validation" }))
+{
+<div class="col-form-label">
+    Feedback Form
+</div>
+<div class="list">
+    <div class="row mt-2">
+        <div class="col">
+            <label for="formName" class="form-label">Name : </label>
+            <input id="formName" name="formName" type="text" title="formName" class="form-control" maxlength="20" required />
+        </div>
+        <div class="col">
+            <label class="form-label">Email Address : </label>
+            <input id="formEmail" name="formEmail" type="email" title="formName" class="form-control" required />
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col">
+            <label class="form-label">Is this your first visit to the website?</label>
+            <div class="form-check">
+                <input type="radio" name="formVisit" title="Yes" value="Yes" class="form-check-input" id="formYes" required />
+                <label for="formYes" class="form-check-label">Yes</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="formVisit" title="No" value="No" class="form-check-input" id="formNo" required />
+                <label for="formNo" class="form-check-label">No</label>
+            </div>
+        </div>
+        <div class="col">
+            <label class="form-label">Were you able to find what you need?</label>
+            <div class="form-check">
+                <input type="radio" name="formInfo" title="Yes" value="Yes" class="form-check-input" id="formYes" required />
+                <label for="formYes" class="form-check-label">Yes</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="formInfo" title="No" value="No" class="form-check-input" id="formNo" required />
+                <label for="formNo" class="form-check-label">No</label>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col">
+            <span class="rounded-circle">What is the primary reason for your visit to the website? </span>
+            <textarea name="formVisitReason" class="form-control" maxlength="200" spellcheck="true"></textarea>
+        </div>
+        <div class="col">
+            <span class="rounded-circle">If you didn't find what you needed, please tell us what info you are seeking?</span>
+            <textarea name="formGreivance" class="form-control" maxlength="200" spellcheck="true"></textarea>
+        </div>
+    </div>
+    <div class="row mt-2">
+        <div class="col">
+            <label class="form-label">How easy is it to get the information from the website?</label>
+            <div class="form-check">
+                <input type="radio" name="formContentFindStatus" title="Very Easy" value="VeryEasy" class="form-check-input" id="formVeryEasy" required />
+                <label for="formVeryEasy" class="form-check-label">Very Easy</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="formContentFindStatus" title="Easy" value="Easy" class="form-check-input" id="formEasy" required />
+                <label for="formEasy" class="form-check-label">Easy</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="formContentFindStatus" title="Average" value="Average" class="form-check-input" id="formAverage" required />
+                <label for="formAverage" class="form-check-label">Average</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="formContentFindStatus" title="Dificult" value="Dificult" class="form-check-input" id="formDificult" required />
+                <label for="formDificult" class="form-check-label">Dificult</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="formContentFindStatus" title="Very Dificult" value="VeryDificult" class="form-check-input" id="formVeryDificult" required />
+                <label for="formVeryDificult" class="form-check-label">Very Dificult</label>
+            </div>
+        </div>
+        <div class="col">
+            <label class="form-label">What is the likelihood to return to the website?</label>
+            <div class="form-check">
+                <input type="radio" name="formContentQuality" title="Extremely" value="Extremely" class="form-check-input" id="formExtreme" required />
+                <label for="formExtreme" class="form-check-label">Extremely Likely</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="formContentQuality" title="Very" value="Very" class="form-check-input" id="formVery" required />
+                <label for="formVery" class="form-check-label">Very Likely</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="formContentQuality" title="Moderate" value="Moderate" class="form-check-input" id="formModerate" required />
+                <label for="formModerate" class="form-check-label">Moderate Likely</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="formContentQuality" title="Slight" value="Slight" class="form-check-input" id="formSlight" required />
+                <label for="formSlight" class="form-check-label">Slight Likely</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" name="formContentQuality" title="Unlikely" value="Unlikely" class="form-check-input" id="formUnlikely" required />
+                <label for="formUnlikely" class="form-check-label">Unlikely to return</label>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2">
+        @*<div class="col">
+            <label class="form-label">Select Course :</label>
+            <select name="formCourse" class="form-select" required>
+                <option value="Select an options" selected>Select an options</option>
+                <option value="ASP-XML">ASP-XML</option>
+                <option value="DotNET">DotNET</option>
+                <option value="JAVA">JAVA</option>
+                <option value="UNIX">UNIX</option>
+                <option value="C++">C++</option>
+            </select>
+        </div>*@
+        <div class="col">
+            <span class="rounded-circle">Please provide any additional comments or suggestions.</span>
+            <textarea name="formSuggestions" class="form-control" maxlength="200" spellcheck="true"></textarea>
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-12">
+            <input id="formSubmit" type="submit" title="Submit" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
+}
