@@ -34,10 +34,10 @@ namespace NewCoreApplication.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
         [HttpPost]
-        public ActionResult FormSubmit(FeedBackFormModel formData)
+        public JsonResult FormSubmit(FeedBackFormModel formData)
         {
             //Logic
-            return Json($"<script>alert('{formData.formName}! Form submitted successfully.');</script>");
+            return Json($"Mr./Mrs./Miss. {formData.formName}! Form submitted successfully.");
         }
     }
 }
