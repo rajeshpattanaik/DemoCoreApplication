@@ -35,3 +35,4 @@ C:\Users\rajes\source\repos\NewCoreApplication\rajeshpattanaik\DemoCoreApplicati
 C:\Users\rajes\source\repos\NewCoreApplication\rajeshpattanaik\DemoCoreApplication\NewCoreApplication\obj\Debug\netcoreapp3.1\NewCoreApplication.pdb
 C:\Users\rajes\source\repos\NewCoreApplication\rajeshpattanaik\DemoCoreApplication\NewCoreApplication\obj\Debug\netcoreapp3.1\NewCoreApplication.genruntimeconfig.cache
 C:\Users\rajes\source\repos\NewCoreApplication\rajeshpattanaik\DemoCoreApplication\NewCoreApplication\obj\Debug\netcoreapp3.1\NewCoreApplication.csproj.CopyComplete
+C:\Users\rajes\source\repos\NewCoreApplication\rajeshpattanaik\DemoCoreApplication\NewCoreApplication\bin\Debug\netcoreapp3.1\DataAnnotationsExtensions.dll
